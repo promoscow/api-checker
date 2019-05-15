@@ -42,6 +42,9 @@ export default class App extends Component {
                         Send
                     </button>
                 </form>
+                <div className="main">
+                    <textarea className="textarea"/>
+                </div>
             </div>
         )
     }
