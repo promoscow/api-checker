@@ -32,14 +32,14 @@ export default class App extends Component {
                     <input
                         className="form"
                         type="text"
-                        placeholder="request"
+                        placeholder="Введите запрос"
                         onChange={this.onLabelChange}
                         value={this.state.label}
                     />
                     <button
                         className="btn-secondary button-custom"
                         onClick={this.onSubmit}>
-                        Send request
+                        Send
                     </button>
                 </form>
             </div>

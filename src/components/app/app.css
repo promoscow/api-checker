@@ -13,16 +13,13 @@
 
 .form {
     margin-top: 10px;
-    margin-right: 10px;
+    margin-right: 1%;
     padding: 7px;
-    width: auto;
+    width: 89%;
     height: 50px;
-}
-
-.form input {
-    margin-right: 3px;
 }
 
 .button-custom {
     height: 50px;
+    width: 10%;
 }
