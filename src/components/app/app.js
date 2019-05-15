@@ -9,7 +9,7 @@ export default class App extends Component {
 
     state = {
         label: '',
-        response: '23984675'
+        // response: '23984675'
     };
 
     onLabelChange = (element) => {
@@ -22,9 +22,10 @@ export default class App extends Component {
         element.preventDefault();
         console.log('request: ' + this.state.label);
         if (this.state.label !== '') {
-            this.setState({
-                response: await request.getResource(this.state.label)
-            });
+            // this.setState({
+            //     response: await request.getResource(this.state.label)
+            // });
+            await request.getResource(this.state.label)
         }
     };
 
@@ -45,9 +46,9 @@ export default class App extends Component {
                         Send
                     </button>
                 </form>
-                <div className="main">
-                    <textarea className="textarea" value={this.state.response}/>
-                </div>
+                {/*<div className="main">*/}
+                {/*    <textarea className="textarea" value={this.state.response}/>*/}
+                {/*</div>*/}
             </div>
         )
     }
