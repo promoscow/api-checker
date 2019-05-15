@@ -1,6 +1,6 @@
 export default class Request {
 
-    getResource = async ({requestPath}) => {
+    getResource = async (requestPath) => {
         console.log('sending request: ' + requestPath);
         const res = await fetch(`${requestPath}`);
 
