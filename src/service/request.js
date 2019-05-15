@@ -1,6 +1,7 @@
 export default class Request {
 
     getResource = async (requestPath) => {
+        requestPath = Request.checkForHttp(requestPath);
         console.log('sending request: ' + requestPath);
         const res = await fetch(`${requestPath}`);
 
@@ -11,4 +12,10 @@ export default class Request {
         return await res.json();
     };
 
+    static checkForHttp(requestPath) {
+        if (!(requestPath.indexOf('http://') >= 0) && !(requestPath.indexOf('https://') >= 0)) {
+            requestPath = 'http://' + requestPath;
+        }
+        return requestPath;
+    }
 };
