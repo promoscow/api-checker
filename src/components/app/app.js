@@ -9,7 +9,7 @@ export default class App extends Component {
 
     state = {
         label: '',
-        // response: '23984675'
+        response: '23984675'
     };
 
     onLabelChange = (element) => {
@@ -45,11 +45,9 @@ export default class App extends Component {
                         Send
                     </button>
                 </form>
-                {/*<div className="main">*/}
-                {/*    <textarea className="textarea" placeholder={this.state.response}>*/}
-
-                {/*    </textarea>*/}
-                {/*</div>*/}
+                <div className="main">
+                    <textarea className="textarea" value={this.state.response}/>
+                </div>
             </div>
         )
     }
